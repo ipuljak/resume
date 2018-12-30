@@ -1,0 +1,152 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+%\usepackage{mdframed}
+\usepackage{mdframed}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\definecolor{light-gray}{gray}{0.95}
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Ivan Puljak}  & https://puljak.ca \\
+Full-Stack Web Developer \& Software Engineer & https://github.com/ipuljak \\
+15 Isabella Street & ivanpulj@gmail.com \\
+Brampton, ON L6X 1P4 & 416-878-4484 \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\begin{mdframed}[backgroundcolor=light-gray]
+\textbf{Education}
+\end{mdframed}
+\begin{itemize}
+\item
+	\ressubheading{University of Toronto}{Toronto, ON}{Honours Bachelor of Science, Specialist Computer Science }{Sep. 2009 - Jun. 2014}
+	\begin{itemize}
+		\resitem{Relevant Courses: Software Engineering, Algorithms: Design and Complexity, Databases, Operating Systems, Natural Language Computation, Computational Linguistics, Artificial Intelligence, Video Game Design, Business of Software}
+	\end{itemize}
+
+\end{itemize}
+
+\begin{mdframed}[backgroundcolor=light-gray]
+\textbf{Work Experience}
+\end{mdframed}
+\begin{itemize}
+\item
+	\ressubheading{Arctic Glacier Canada Inc.}{Mississauga, ON}{Distribution Supervisor \& Dispatch}{Nov. 2015 - May 2016}
+	\begin{itemize}
+		\resitem{Supervising a team of company drivers, technicians, and loaders; responsible for their safety and compliance as defined by the Ministry of Labour/Transportation.}
+		\resitem{Creating and reviewing routes daily, support for customer service representatives, and overseeing the ordering and delivery of merchandise freezers.}
+		\resitem{Responsible for dealing with a wide variety of customer service issues including inquiries and concerns.}
+		\resitem{Other day to day duties reporting to the distribution manager.}
+	\end{itemize}
+\item
+	\ressubheading{Arctic Glacier Canada Inc.}{Mississauga, ON}{Route Delivery Sales}{Jun. 2010 - Nov. 2015}
+	\begin{itemize}
+		\resitem{Delivering daily to a variety of commercial and industrial locations in and around the GTA.}
+		\resitem{Interaction with customers, fulfilling orders, and merchandising according to specifications.}
+		\resitem{Responsible for expensive equipment: commercial truck with air-brakes and refrigerated unit.}
+		\resitem{Responsible for training new drivers as well as other extra tasks including installing \& removing merchandisers, loading \& unloading, and customer service.}
+	\end{itemize}
+\end{itemize}
+
+\begin{mdframed}[backgroundcolor=light-gray]
+\textbf{Projects and Volunteer Work}
+\end{mdframed}
+\begin{itemize}
+\item
+	\ressubheading{Portfolio \& Personal Website}{https://puljak.ca}{Portfolio}{Present}
+	\begin{itemize}
+		\resitem{My personal website which hosts many of my projects that I have worked on, as well as photos, and other information about me. You can view the work directly on my website, but you may also look at the code on https://github.com/ipuljak.}
+	\end{itemize}
+\item
+	\ressubheading{The Street View Tourist}{https://streetviewtourist.com}{Full-stack project}{Present}
+	\begin{itemize}
+		\resitem{A project I made which aims to give the user a virtual tourist experience through being able to explore the various Google Street Views of famous landmarks and locations of the world.}
+		\resitem{Created using the React framework for the front-end, node.js with Express for the back-end, and a mongoDB database to store all of the data.}
+	\end{itemize}
+\item
+	\ressubheading{Habitat For Humanity}{Brampton, ON}{Volunteer}{Aug. 2015 - Present}
+	\begin{itemize}
+		\resitem{Responsible for general labour at the ReStore where all proceeds go to homes built by the Habitat For Humanity.}
+		\resitem{Duties including unloading trucks, sorting \& displaying merchandise, maintaining store order and cleanliness, and providing service to customers.}
+	\end{itemize}
+\item
+	\ressubheading{Lava Leaper}{Toronto, ON}{Award winning game at the Level Up Showcase}{Apr. 2014}
+	\begin{itemize}
+		\resitem{Was the lead developer and programmer for an indie game project called Lava Leaper.}
+		\resitem{One of 4 games out of 60+ to win an award at the student exhibition "Level Up Showcase", a convention held in Toronto which exhibits student-made video games from 	Canadian universities. Companies such as Ubisoft and AMD were present.}
+	\end{itemize}
+\item
+	\ressubheading{Learning Enrichment Foundation}{Toronto, ON}{Volunteer}{Feb. 2014}
+	\begin{itemize}
+		\resitem{Volunteered at LEF as part of a joint program with the University of Toronto.}
+		\resitem{Performed routine maintenance around the entire building.}
+	\end{itemize}
+
+\end{itemize}
+
+\begin{mdframed}[backgroundcolor=light-gray]
+\textbf{Skills}
+\end{mdframed}
+
+\begin{description}
+\item[Spoken Languages:]
+Fluent English \& Croatian/Serbian, studying French
+\item[Programming Languages:]
+Javascript (ES6), Python
+\item[Web Development:]
+HTML, CSS, node.js, React, Redux, jQuery, NGINX
+\item[Databases:]
+MongoDB, SQL
+\item[Computers:]
+GNU/Linux, Bash, Git, npm, Latex, build and repair computer hardware
+\item[Driving:]
+Full DMZ license, 9 years driving experience
+\item[Miscellaneous:]
+Strong verbal and written skills, excel both in team and independent environments, excellenct sense of judgement, of good character with strong morals and integrity \\
+Ontario Association of Chiefs of Police certification \\
+First Aid \& CPR/AED C certification
+\end{description}
+
+\end{document}

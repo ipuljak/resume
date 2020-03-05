@@ -376,7 +376,7 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
+\newcommand{\acvSectionTopSkip}{2.5mm}
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
 
 
@@ -639,7 +639,7 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
+  \vspace{-5.0mm}
   \begin{flushleft}
   \begin{itemize}[leftmargin=4ex, rightmargin=17ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
